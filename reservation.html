@@ -8,39 +8,41 @@
 
    <body>
       <h1>Reservation Page</h1>
-      <label for="select">공연 선택</label>
-      <select name="select" id="select">
-         <option value="서울의 봄">서울의 봄</option>
-         <option value="인셉션">인셉션</option>
-         <option value="나는 내일, 어제의 너와 만난다">나는 내일, 어제의 너와 만난다</option>
-         <option value="레미제라블">레미제라블</option>
-         <option value="캣츠">캣츠</option>
-         <option value="레베카">레베카</option>
-      </select>
-      <div>
-         <label for="selectDate">날짜 선택</label>
-         <select name="selectDate" id="selectDate">
-            <option value="2024-01-10">2024년 1월 10일</option>
-            <option value="2024-01-11">2024년 1월 11일</option>
-            <option value="2024-01-12">2024년 1월 12일</option>
-            <option value="2024-01-13">2024년 1월 13일</option>
-            <option value="2024-01-14">2024년 1월 14일</option>
-            <option value="2024-01-15">2024년 1월 15일</option>
-            <option value="2024-01-16">2024년 1월 16일</option>
-            <option value="2024-01-17">2024년 1월 17일</option>
-         </select>
-      </div>
-      <div>
-         <label for="selectPlace">공연장 선택</label>
-         <select name="selectPlace" id="selectPlace">
-            <option value="누리관">누리관</option>
-            <option value="공학1관">공학1관</option>
-            <option value="나래관">나래관</option>
-            <option value="미래관">미래관</option>
-            <option value="창의관">창의관</option>
-         </select>
+      
       </div>
       <form action="#" autocomplet="on">
+         <label for="select">공연 선택</label>
+         <select name="select" id="select">
+            <option value="서울의 봄">서울의 봄</option>
+            <option value="인셉션">인셉션</option>
+            <option value="나는 내일, 어제의 너와 만난다">나는 내일, 어제의 너와 만난다</option>
+            <option value="레미제라블">레미제라블</option>
+            <option value="캣츠">캣츠</option>
+            <option value="레베카">레베카</option>
+         </select>
+         <div>
+            <label for="selectDate">날짜 선택</label>
+            <select name="selectDate" id="selectDate">
+               <option value="2024-01-10">2024년 1월 10일</option>
+               <option value="2024-01-11">2024년 1월 11일</option>
+               <option value="2024-01-12">2024년 1월 12일</option>
+               <option value="2024-01-13">2024년 1월 13일</option>
+               <option value="2024-01-14">2024년 1월 14일</option>
+               <option value="2024-01-15">2024년 1월 15일</option>
+               <option value="2024-01-16">2024년 1월 16일</option>
+               <option value="2024-01-17">2024년 1월 17일</option>
+            </select>
+         </div>
+         <div>
+            <label for="selectPlace">공연장 선택</label>
+            <select name="selectPlace" id="selectPlace">
+               <option value="누리관">누리관</option>
+               <option value="공학1관">공학1관</option>
+               <option value="나래관">나래관</option>
+               <option value="미래관">미래관</option>
+               <option value="창의관">창의관</option>
+            </select>
+         </div>
          <div><input type="text" name="name" placeholder="이름"></div>
          <div><input type="text" name="number" placeholder="전화번호 01012345678"></div>
          <button type="button" onclick="reserve">예매하기</button>
