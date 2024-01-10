@@ -7,8 +7,12 @@
    </head>
 
    <body>
-      <h1>Reservation Page</h1>
+      <a href="main.html">
+         <h1>Lucky Seven</h1>
+      </a>
       
+      <h1>Reservation Page</h1>
+
       </div>
       <form action="#" autocomplet="on">
          <label for="select">공연 선택</label>
@@ -22,16 +26,8 @@
          </select>
          <div>
             <label for="selectDate">날짜 선택</label>
-            <select name="selectDate" id="selectDate">
-               <option value="2024-01-10">2024년 1월 10일</option>
-               <option value="2024-01-11">2024년 1월 11일</option>
-               <option value="2024-01-12">2024년 1월 12일</option>
-               <option value="2024-01-13">2024년 1월 13일</option>
-               <option value="2024-01-14">2024년 1월 14일</option>
-               <option value="2024-01-15">2024년 1월 15일</option>
-               <option value="2024-01-16">2024년 1월 16일</option>
-               <option value="2024-01-17">2024년 1월 17일</option>
-            </select>
+            <input type="date" name="selectDate">
+            <input type="time" min="09:00" max="21:00" step="7200" required>
          </div>
          <div>
             <label for="selectPlace">공연장 선택</label>
@@ -43,9 +39,15 @@
                <option value="창의관">창의관</option>
             </select>
          </div>
-         <div><input type="text" name="name" placeholder="이름"></div>
-         <div><input type="text" name="number" placeholder="전화번호 01012345678"></div>
-         <button type="button" onclick="reserve">예매하기</button>
+         <div>
+            <label for="selectPlace">이름</label>
+            <input type="text" name="name" placeholder="이름">
+         </div>
+         <div>
+            <label for="selectPlace">전화번호</label>
+            <input type="text" name="number" placeholder="전화번호 01012345678">
+         </div>
+         <button type="button" onclick="reserve">예매완료</button>
       </form>
    </body>
 </html>
